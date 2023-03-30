@@ -15,6 +15,7 @@ import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
 import * as styles from './index.module.css';
 import { Link, navigate } from 'gatsby';
+import Highlight2 from '../components/Highlight/highlight2';
 
 const IndexPage = () => {
   const newArrivals = generateMockProductData(3, 'shirt');
@@ -40,7 +41,7 @@ const IndexPage = () => {
       <div className={styles.messageContainer}>
         <p>
           We are THE digital marketing agency to take you to {' '}
-          <span className={styles.blue}>the summit.</span>
+          <span className={styles.gold}>the summit.</span>
         </p>
         <p>
           Engage more <span className={styles.gold}>customers</span> and{' '}
@@ -74,9 +75,9 @@ const IndexPage = () => {
       <div className={styles.highlightContainer}>
         <Container size={'large'} fullMobile>
           <Highlight
-            image={'/highlight.png'}
+            image={'/highlight1.png'}
             altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
+            miniImage={'/highlightmin1.png'}
             miniImageAlt={'mini highlight image'}
             title={'Website Design and Development'}
             description={`Our website design and development services provide physical therapists with a customized website that is optimized for search engines, secure, and provides an excellent user experience. Our services include custom designs, responsive design, and mobile optimization, with pricing ranging from $2000-$5000 based on the scope and complexity of the website.`}
@@ -90,15 +91,16 @@ const IndexPage = () => {
       {/* Highlight 2  */}
       <div className={styles.highlightContainer}>
         <Container size={'large'} fullMobile>
-          <Highlight
-            image={'/highlight.png'}
+          <Highlight2
+            image={'/highlightmin2.jpg'}
             altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
+            miniImage={'/highlight.png'}
             miniImageAlt={'mini highlight image'}
-            title={'Website Design and Development'}
-            description={`Our website design and development services provide physical therapists with a customized website that is optimized for search engines, secure, and provides an excellent user experience. Our services include custom designs, responsive design, and mobile optimization, with pricing ranging from $2000-$5000 based on the scope and complexity of the website.`}
-            textLink={'Get Ahead of the Competition'}
+            title={'Search Engine Optimization (SEO)'}
+            description={`Our SEO services help physical therapists rank higher in search engine results, increasing visibility and driving more traffic to their site. We optimize website content and structure, improving ranking for relevant keywords, with pricing ranging from $1000-$2500 per month based on the scope of work and competition for the targeted keywords.`}
+            textLink={'Help your customers find YOU'}
             link={'/shop'}
+            
           />
         </Container>
       </div>
@@ -121,7 +123,7 @@ const IndexPage = () => {
         }
       />
 
-      {/* Blog Grid */}
+      {/* Blog Grid 
       <div className={styles.blogsContainer}>
         <Container size={'large'}>
           <Title name={'Journal'} subtitle={'Notes on life and style'} />
@@ -129,7 +131,7 @@ const IndexPage = () => {
         </Container>
       </div>
 
-      {/* Promotion */}
+      {/* Promotion 
       <div className={styles.sustainableContainer}>
         <Hero
           image={'/banner3.png'}
@@ -141,21 +143,24 @@ const IndexPage = () => {
           maxWidth={'660px'}
           ctaStyle={styles.ctaCustomButton}
         />
-      </div>
+      </div>*/}
 
       {/* Social Media */}
       <div className={styles.socialContainer}>
         <Title
           name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
+          subtitle={'Tag @digieverest to be featured.'}
         />
+        {/*
         <div className={styles.socialContentGrid}>
           <img src={`/social/socialMedia1.png`} alt={'social media 1'} />
           <img src={`/social/socialMedia2.png`} alt={'social media 2'} />
           <img src={`/social/socialMedia3.png`} alt={'social media 3'} />
           <img src={`/social/socialMedia4.png`} alt={'social media 4'} />
-        </div>
-      </div>
+        </div> */}
+      </div> 
+
+      
       <AttributeGrid />
     </Layout>
   );
