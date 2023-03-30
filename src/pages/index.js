@@ -30,21 +30,21 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        title={'Essentials for a Digital Footprint'}
+        subtitle={'Climb Everest in your own digital way'}
+        ctaText={'work with us'}
         ctaAction={goToShop}
       />
 
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+          We are THE digital marketing agency to take you to {' '}
+          <span className={styles.blue}>the summit.</span>
         </p>
         <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
+          Engage more <span className={styles.gold}>customers</span> and{' '}
+          <span className={styles.gold}>grow your business</span>
         </p>
       </div>
 
@@ -56,7 +56,7 @@ const IndexPage = () => {
         </Container>
       </div>
 
-      {/* New Arrivals */}
+      {/* New Arrivals 
       <div className={styles.newArrivalsContainer}>
         <Container>
           <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
@@ -68,7 +68,7 @@ const IndexPage = () => {
             data={newArrivals}
           />
         </Container>
-      </div>
+      </div> */}
 
       {/* Highlight  */}
       <div className={styles.highlightContainer}>
@@ -78,27 +78,44 @@ const IndexPage = () => {
             altImage={'highlight image'}
             miniImage={'/highlightmin.png'}
             miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
+            title={'Website Design and Development'}
+            description={`Our website design and development services provide physical therapists with a customized website that is optimized for search engines, secure, and provides an excellent user experience. Our services include custom designs, responsive design, and mobile optimization, with pricing ranging from $2000-$5000 based on the scope and complexity of the website.`}
+            textLink={'Get Ahead of the Competition'}
             link={'/shop'}
           />
         </Container>
       </div>
 
-      {/* Promotion */}
+
+      {/* Highlight 2  */}
+      <div className={styles.highlightContainer}>
+        <Container size={'large'} fullMobile>
+          <Highlight
+            image={'/highlight.png'}
+            altImage={'highlight image'}
+            miniImage={'/highlightmin.png'}
+            miniImageAlt={'mini highlight image'}
+            title={'Website Design and Development'}
+            description={`Our website design and development services provide physical therapists with a customized website that is optimized for search engines, secure, and provides an excellent user experience. Our services include custom designs, responsive design, and mobile optimization, with pricing ranging from $2000-$5000 based on the scope and complexity of the website.`}
+            textLink={'Get Ahead of the Competition'}
+            link={'/shop'}
+          />
+        </Container>
+      </div>
+
+      {/* Promotion 
       <div className={styles.promotionContainer}>
         <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
           <Link to={'/shop'}>WOMAN</Link>
           <Link to={'/shop'}>MAN</Link>
         </div>
-      </div>
+      </div> */}
 
       {/* Quote */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={'about Digital Everest'}
         quote={
           '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
         }
