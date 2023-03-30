@@ -65,26 +65,26 @@
   "headerLinks": [
     {
       "menuLabel": "Shop",
-      "menuLink": "/shop",
+      "menuLink": "/services",
       "category": [
         {
           "categoryLabel": "Services",
           "submenu": [
             {
               "menuLabel": "SEO",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Web Design",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Content Marketing",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Performance Branding",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             }
           ]
         },
@@ -93,23 +93,23 @@
           "submenu": [
             {
               "menuLabel": "Go-to-Market Strategy",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Brand Strategy and Positioning",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Reserach & Insights",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Customer Journey and Positioning",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Visual Identity",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             }
           ]
         },
@@ -118,11 +118,11 @@
           "submenu": [
             {
               "menuLabel": "Conversion Rate Optimization",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             },
             {
               "menuLabel": "Private Label Booking Automation",
-              "menuLink": "/shop"
+              "menuLink": "/services"
             }
           ]
         }

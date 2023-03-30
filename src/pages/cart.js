@@ -26,7 +26,7 @@ const CartPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <div className={styles.headerContainer}>
             <div className={styles.shoppingContainer}>
-              <Link className={styles.shopLink} to={'/shop'}>
+              <Link className={styles.shopLink} to={'/services'}>
                 <Icon symbol={'arrow'}></Icon>
                 <span className={styles.continueShopping}>
                   Continue Shopping

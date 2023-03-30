@@ -29,9 +29,9 @@ const Header = (prop) => {
   const searchRef = createRef();
   const bannerMessage = 'Changing your world';
   const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
-    'Candles Cinnamon',
+    'Fix my website',
+    'Build my Scheduler',
+    'Get me more leads',
   ];
 
   const handleHover = (navObject) => {

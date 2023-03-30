@@ -11,7 +11,6 @@ import Layout from '../components/Layout/Layout';
 import Quote from '../components/Quote';
 import Title from '../components/Title';
 
-import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
 import * as styles from './index.module.css';
 import { navigate } from 'gatsby';
@@ -20,7 +19,7 @@ import Highlight2 from '../components/Highlight/highlight2';
 const IndexPage = () => {
   
   const goToShop = () => {
-    navigate('/shop');
+    navigate('/services');
   };
 
   return (
@@ -58,7 +57,7 @@ const IndexPage = () => {
       {/* New Arrivals 
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+          <Title name={'New Arrivals'} link={'/services'} textLink={'view all'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -80,7 +79,7 @@ const IndexPage = () => {
             title={'Website Design and Development'}
             description={`Our website design and development services provide physical therapists with a customized website that is optimized for search engines, secure, and provides an excellent user experience. Our services include custom designs, responsive design, and mobile optimization, with pricing ranging from $2000-$5000 based on the scope and complexity of the website.`}
             textLink={'Get Ahead of the Competition'}
-            link={'/shop'}
+            link={'/services'}
           />
         </Container>
       </div>
@@ -97,7 +96,7 @@ const IndexPage = () => {
             title={'Search Engine Optimization (SEO)'}
             description={`Our SEO services help physical therapists rank higher in search engine results, increasing visibility and driving more traffic to their site. We optimize website content and structure, improving ranking for relevant keywords, with pricing ranging from $1000-$2500 per month based on the scope of work and competition for the targeted keywords.`}
             textLink={'Help your customers find YOU'}
-            link={'/shop'}
+            link={'/services'}
             
           />
         </Container>
@@ -107,8 +106,8 @@ const IndexPage = () => {
       <div className={styles.promotionContainer}>
         <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
+          <Link to={'/services'}>WOMAN</Link>
+          <Link to={'/services'}>MAN</Link>
         </div>
       </div> */}
 

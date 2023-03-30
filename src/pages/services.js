@@ -17,6 +17,15 @@ import Config from '../config.json';
 const ServicesPage = () => {
   const [showFilter, setShowFilter] = React.useState(false);
 
+  React.useEffect(() => {
+    window.addEventListener('keydown', escapeHandler);
+    return () => window.removeEventListener('keydown', escapeHandler);
+  }, []);
+
+  const escapeHandler = (e) => {
+    if (e?.keyCode === undefined) return;
+    if (e.keyCode === 27) setShowFilter(false);
+  };
 
   return (
     <Layout>
@@ -39,6 +48,25 @@ const ServicesPage = () => {
           }
         />
         <Container size={'large'} spacing={'min'}>
+          <div className={styles.metaContainer}>
+            <span className={styles.itemCount}>15 services</span>
+            <div className={styles.controllerContainer}>
+              <div
+                className={styles.iconContainer}
+                role={'presentation'}
+                onClick={() => setShowFilter(!showFilter)}
+              >
+                <Icon symbol={'filter'} />
+                <span>Filters</span>
+              </div>
+              <div
+                className={`${styles.iconContainer} ${styles.sortContainer}`}
+              >
+                <span>Sort by</span>
+                <Icon symbol={'caret'} />
+              </div>
+            </div>
+          </div>
           <CardController
             closeFilter={() => setShowFilter(false)}
             visible={showFilter}
@@ -50,13 +78,17 @@ const ServicesPage = () => {
             <Chip name={'Social Media'} />
             <Chip name={'Content Marketing'} />
           </div>
-          {/*}
-          <div className={styles.serviceContainer}>
+          {/*<div className={styles.serviceContainer}>
             {data.map((service) => (
               <ServiceCard key={service.id} data={service} />
             ))}
-            </div> */}
-         
+          </div> */}
+          <div className={styles.loadMoreContainer}>
+            <span>6 of 15</span>
+            <Button fullWidth level={'secondary'}>
+              LOAD MORE
+            </Button>
+          </div>
           <div className={styles.contentContainer}>
             <h2>Why Choose Our Digital Marketing Services?</h2>
             <p>
