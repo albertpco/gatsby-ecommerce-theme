@@ -48,13 +48,13 @@ const IndexPage = () => {
         </p>
       </div>
 
-      {/* Collection Container */}
+      {/* Collection Container 
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
           <Title name={'New Collection'} />
           <ProductCollectionGrid />
         </Container>
-      </div>
+      </div>*/}
 
       {/* New Arrivals 
       <div className={styles.newArrivalsContainer}>
